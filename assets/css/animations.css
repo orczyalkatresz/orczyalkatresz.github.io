@@ -1,0 +1,36 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: default;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: default;
+  }
+}
+
+@-webkit-keyframes comesFromTop {
+  0% {
+    top: 300%;
+  }
+  100% {
+    top: default;
+  }
+}
+
+@keyframes comesFromTop {
+  0% {
+    top: 300%;
+  }
+  100% {
+    top: default;
+  }
+}
+/*# sourceMappingURL=animations.css.map */

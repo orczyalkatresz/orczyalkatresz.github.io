@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@import "variables";
+@import "animations";
+@import "mixins";
+@import "misc";
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: $defaultFontFamily;
+    // user-select: none;
+}
+
+body{
+    background-image: url("../../img/mosogep_hatter_small.png");
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    transition: 0s linear;
+    transition-property: background-position;
+    // background-position: 50% 0;   
+    background-size: cover;
+
+}  
+h1,h2,h3 {
+    font-family: $defaultHeadingFontFamily;
+    letter-spacing: 3px;
+}
+li{
+    list-style-position: outside;
+}
+
+
+#cookie_area{
+    display: none;
+    width: 100%;
+    background-color: $mainFontColor;
+    color: $SecFontColor;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    opacity: 0.7;
+    text-align: center;
+}
+.normal_button{
+    float: none;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: $defaultHeadingFontFamily;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;
+    color: $SecFontColor;
+    opacity: 1;
+    background-color: $mainFontColor;
+}
+#header{
+    @include normalDiv(rgb(0, 0, 0),0.7 , 10px ); 
+    @include fontProperties($color: rgb(255, 255, 255));
+    z-index: 99;
+}
+#header > div {
+    opacity: 1;
+}
+#bejelentes iframe{
+    min-height:600px;
+}
+.centered{
+    text-align: center;
+}
+#footer {
+    @include fontProperties($color: $SecFontColor);
+    margin-top: 50px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    
+}
+[id$="_content"]{
+    display: none;
+    position: relative;
+    background-color: $mainFontColor;
+    color: $SecFontColor;
+    word-wrap: break-word;
+    text-align: left;
+    opacity: 0.7;
+    padding: 5px;
+    margin: 5px;
+    width: 97%;
+}
+[id$="_content"] div{
+    background-color: inherit;
+}
+[id$="_content"] div.normal_button{
+    @extend .normal_button;
+    position: fixed;
+    width: 40%;
+    height: 5%;
+    left: 30%;
+    bottom: 0%;
+}
+iframe {
+    width: 100%;
+    border-style: none;
+    // min-height: 500px;
+    overflow-y : hidden;
+}
+#logo{
+    opacity: 1;
+    width:35px;
+}
+.menu_button{
+    opacity: 1;
+    color: $SecFontColor;
+    font-size: 22px;
+    vertical-align: middle;
+    align-self: center;
+}
+.menu_button:hover{
+    background-color: $mainFontColor;
+    opacity: 1;
+    filter: brightness(200%);
+}
+a, a:visited {
+    color: $SecFontColor;
+    text-decoration: none;
+}
+#home_text{
+    position: relative;
+    // margin: auto;
+    // @include animations($name: comesFromTop, $duration: 2s);
+}
+.menu{
+    text-align: center;
+    opacity: 1;
+}
+#page_name{
+    margin: 0px;
+    opacity: 1;
+    @include fontProperties($fontSize: 2em, $color: $SecFontColor, $font-weight: bold);
+}
+#home_content{
+    color: $SecFontColor;
+}
+#home_content h1{
+    color: $mainFontColor;
+}
+.card_container{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     align-content: space-between;
+     flex-wrap: wrap;
+     
+     
+}
+.card{
+    @include borderedDiv($bg_color:black, $style: solid, $rad: 10px);
+    @include animations($name: fadeIn, $duration: 3s);
+    opacity: 0.7;
+    width: 99%;
+    color: $SecFontColor;
+    text-align: center;
+    display: flex;
+    align-content:stretch;
+    padding: 30px;
+    
+    margin: 10px;
+}
+.card div {
+    align-self: center; 
+    
+}
+.marka_box div{
+    margin: 5px;
+    float: left;
+    font-size: 1.2em;
+
+}
+#home ~ .card{
+    width: 200;
+    height: 200;
+}
+#rolunk ~ .card{
+    height: 500px;
+}
+#menu_button{
+    width: 30px;
+} 
+section, #home {
+    width: 100%;
+    // margin-top: 40px;
+   height: 100%;
+    float: left; 
+    
+}
+.rolunk{
+    min-height: 200px;
+}
+.rolunk img{
+    max-width: 40%;
+}
+.rolunk *{
+    font-weight: bold;
+}
+
+#up_nav{
+    position: fixed; 
+    right: 5px; 
+    bottom: 5px;
+    width: 50px;
+}
+.tabla{
+    margin: 5px 0px 5px 0px;
+}
+#arinfo_container{
+    width: 100%;
+}
+#arinfo_container div {
+     width: 100%;
+     display: inline-block;
+     column-span: 1;
+}
+#artabla_container div{
+    width: 100%;
+    display: inline-block;
+}
+
+.tableizer-table{
+   width: 100%;
+   font-size: 0.9em;
+    margin: 10px 0px 10px 0px;
+}
+.tableizer-table th{
+    font-size: 1.2em;
+}
+.tableizer-table  td{
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: $SecFontColor;
+    padding: 2px;
+}
+.tableizer-table  td:nth-child(1), th:nth-child(1){
+    text-align: left;
+    width: 50%;
+}
+.tableizer-table   td:nth-child(2), th:nth-child(2){
+    text-align: center;
+    width: 20%;
+}
+
+
+
+@import "queries";

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#mainbody {
+  background-color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 5px;
+}
+
+[additional_text] {
+  font-size: 0.8em;
+}
+
+#header {
+  padding: 10px;
+  background-color: black;
+  opacity: 0.7;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+#header > div {
+  opacity: 1;
+}
+
+.centered {
+  text-align: center;
+}
+
+#footer {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1.6;
+  margin-top: 50px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  border-style: none;
+  overflow-y: hidden;
+}
+
+#logo {
+  opacity: 1;
+  width: 30px;
+}
+
+.menu_button {
+  opacity: 1;
+  color: white;
+  font-size: 22px;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.menu_button:hover {
+  background-color: black;
+  opacity: 1;
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  text-align: center;
+  opacity: 1;
+}
+
+#page_name {
+  margin: 0px;
+  opacity: 1;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2, .menu_button {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
