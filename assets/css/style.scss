@@ -17,6 +17,7 @@
 
 body{
     background-image: url("../../img/mosogep_hatter_small.png");
+    // TODO háttérképet megcsinálni
     background-attachment: fixed;
     background-repeat: repeat-y;
     transition: 0s linear;
@@ -33,7 +34,9 @@ li{
     list-style-position: outside;
 }
 
-
+a:hover{
+    filter: brightness(200%);
+}
 #cookie_area{
     display: none;
     width: 100%;
@@ -125,11 +128,7 @@ iframe {
     vertical-align: middle;
     align-self: center;
 }
-.menu_button:hover{
-    background-color: $mainFontColor;
-    opacity: 1;
-    filter: brightness(200%);
-}
+
 a, a:visited {
     color: $SecFontColor;
     text-decoration: none;

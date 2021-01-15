@@ -98,6 +98,11 @@ li {
   list-style-position: outside;
 }
 
+a:hover {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
 #cookie_area {
   display: none;
   width: 100%;
@@ -211,13 +216,6 @@ iframe {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.menu_button:hover {
-  background-color: black;
-  opacity: 1;
-  -webkit-filter: brightness(200%);
-          filter: brightness(200%);
 }
 
 a, a:visited {
