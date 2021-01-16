@@ -164,7 +164,7 @@
     </section>
   
     <section id="szerviz">
-        <h2 class="normal_button centered" >Szerelőink felkészülten várják a munkákat, több, mint negyven márkához!</h2>
+        <h2 class="centered" >Szerelőink felkészülten várják a munkákat, több, mint negyven márkához!</h2>
         <div class="col-6"> 
             <!-- TODO mobilon kicsúszik a felsorolás jel a bal oldalon -->
             <ol style="font-size: 1.3em;">
@@ -621,18 +621,160 @@
      <section id="sugo">
         <h2 class="centered">Súgó</h2>
 
-        <div class="normal_button">
+        <div class="normal_button" onclick="toggleElement('#adattabla_content')">
             Hol találom az adattáblát??
         </div>
         <div id="adattabla_content">
-            Adattábla content
+            <p>Márkánként és készülékenként eltérhet, hogy a gyártó hova rögzíti a készülék azonosítóit tartalmazó adattáblát. Ehhez próbálunk most egy kis iránymutatást adni, hogy gyorsabban menjen a szolgáltatás.</p>
+
+            <div id="adattabla_container">
+                <div class="col-12">
+                    <h4>Porszívó</h4>
+                    <p>A porszívók esetében az adattáblát a következő helyeken találhatja meg: A készülék alján, hátulján!</p>
+                    <img src="img/adattabla/porszívo-adattabla.jpg">
+                </div>
+                <div class="col-12">
+                    <h4>Mosógép</h4>
+                    <p>A mosógépek esetében az adattáblát a következő helyeken találhatja meg:
+                        Elöltöltős mosógépek esetében:
+                        Az ajtó belső keretén,alul a szűrőajtón, vagy az alsó burkolati elem mögött!
+                        
+                        Felültöltős mosógépek esetében:
+                        A fedél élén, az alsó burkolati elem mögött, vagy a gép hátulján!
+                    </p>
+                    <img src="img/adattabla/mosogep-adattabla.jpg">
+                </div>
+                <div class="col-12">
+                    <h4>Főzőlap</h4>
+                    <p>A főzőlapok esetében az adattáblát a következő helyeken találhatja meg:
+                        A főzőlap elején alul, vagy a hátulján az élén!   
+                    </p>
+                    <img src="img/adattabla/fozolap-adattabla.jpg">
+                </div>
+                <div class="col-12">
+                    <h4>Mikrohullámú sütő</h4>
+                    <p>
+                        A mikrohullámú sütők esetében az adattáblát a következő helyeken találhatja meg:
+                        Az ajtó élén, a keret élén, vagy a hátulján!
+                    </p>
+                    <img src="img/adattabla/mikrohullamu_suto_adattabla.jpg" >
+                </div>
+                <div class="col-12">
+                    <h4>Tűzhely</h4>
+                    <p>
+                        A tűzhelyek esetében az adattáblát a következő helyeken találhatja meg:
+                        Az ajtó alján, a fedő/tepsi tároló oldalán, az ajtó kereten,
+                    </p>
+                    <img src="img/adattabla/tuzhely_adattabla.jpg" >
+                </div>
+                <div class="col-12">
+                    <h4>Hűtőgép</h4>
+                    <p>
+                        A hűtők esetében az adattáblát a következő helyeken találhatja meg:
+                        Az zöldségtárolót kihúzva a hűtő oldalfalán!
+                    </p>
+                    <img src="img/adattabla/hutoszekreny_adattabla.jpg" >
+                </div>
+                <div class="col-12">
+                    <h4>Mosogatógép</h4>
+                    <p>
+                        A mosogatógépek esetében az adattáblát a következő helyeken találhatja meg:
+                        A ajtó élén, a gép hátulján, vagy a kereten!
+                    </p>
+                    <img src="img/adattabla/mosogatogep-adattabla.jpg" >
+                </div>
+            </div>
+
+            <a href="#sugo"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#adattabla_content');">BEZÁRÁS</div></a>
         </div>
 
-        <div class="normal_button">
+        <div class="normal_button" onclick="toggleElement('#azonosito_content')">
             Milyen azonosítókat keressek a gépen?
         </div>
         <div id="azonosito_content">
-            <p>A különböző márkák eltérő azonosító neveket használnak. A legjobb mindig, ha Ön egy adattábla fotót küldd nekünk  </p>>
+            <p>A különböző márkák eltérő azonosító neveket használnak. A legjobb mindig, ha Ön egy adattábla fotót küldd nekünk, de az alábbi táblázat segíthet!  </p>
+            <table class="tableizer-table-adatok tableizer-table">
+                <thead>
+                    <tr>
+                        <th>
+                            Márka
+                        </th>
+                        <th>
+                            Modell
+                        </th>
+                        <th>
+                            Termék azonosító
+                        </th>
+                        <th>
+                            Sorozatszám
+                        </th>
+                    </tr>
+                </thead>
+                <tr class="tableizer-firstrow"><td>AEG</td><td>Modell</td><td>PNC (9-cel kezdődő 9 jegyű számsor + 2 jegyű verziószám)</td><td>Szériaszám (8 jegyű számsor)</td></td>
+                <tbody>
+                 <tr><td>Amica</td><td>Modell és termékkód</td><td>14 jegyű számsor (sorozatszám)</td><td>&nbsp;</td></tr>
+                 <tr><td>Ardo</td><td>Modell és típus</td><td>22 jegyű számsor (gyártási évvel kezdődő)</td><td>&nbsp;</td></tr>
+                 <tr><td>Ariston</td><td>Modell</td><td>11 számjegyű ipari kód</td><td>S/N  szám (9 számjegyű)</td></tr>
+                 <tr><td>Ariston bojler ( Bluker , Junior , Perla ,Regent , Superlux )</td><td>Modell</td><td>11 számjegyű ipari kód</td><td>S/N  szám (9 számjegyű)</td></tr>
+                 <tr><td>Bauknecht</td><td>Modell és típus</td><td>Szervizszám (85-tel kezdődő, 12 számjegy)</td><td>&nbsp;</td></tr>
+                 <tr><td>Beko</td><td>Típus</td><td>10 jegyű kód</td><td>&nbsp;</td></tr>
+                 <tr><td>Bosch</td><td>Típus</td><td>E-nr</td><td>FD szám</td></tr>
+                 <tr><td>Braun</td><td>Típus</td><td>4 jegyű számsor /"OC"-vel kezdődő számsor ha van</td><td>&nbsp;</td></tr>
+                 <tr><td>Candy</td><td>Modell</td><td>Fantázianév</td><td>Gyári szám</td></tr>
+                 <tr><td>Cata</td><td>Típus</td><td>8 jegyű azonosító</td><td>&nbsp;</td></tr>
+                 <tr><td>Constructa</td><td>&nbsp;</td><td>E-nr</td><td>FD szám</td></tr>
+                 <tr><td>De-Lonhghi</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Dirt Devil</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Dometic</td><td>Modell</td><td>PNC (9-cel kezdődő 9 jegyű számsor + 2 jegyű verziószám)</td><td>Széria ha van!</td></tr>
+                 <tr><td>Dyson</td><td>Modell</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Electrolux</td><td>Modell</td><td>PNC (9-cel kezdődő 9 jegyű számsor)</td><td>Szériaszám (9 jegyű számsor)</td></tr>
+                 <tr><td>Elektra Bregenz</td><td>Típus</td><td>10 jegyű számsor</td><td>&nbsp;</td></tr>
+                 <tr><td>Eta</td><td>Modell és típus</td><td>min. 3 v. 4 számjegy</td><td>&nbsp;</td></tr>
+                 <tr><td>Fagor</td><td>Modell</td><td>PNC (9-cel kezdődő 9 jegyű számsor)</td><td>Gyári szám (8 jegyű számsor)</td></tr>
+                 <tr><td>Gaggenau</td><td>&nbsp;</td><td>E-nr</td><td>FD szám</td></tr>
+                 <tr><td>Gaggia</td><td>Modell</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Gorenje</td><td>Modell és típus</td><td>ART szám (6 számjegyű számsor)</td><td>Szériaszám (8 jegyű számsor)</td></tr>
+                 <tr><td>Haier</td><td>Típus</td><td> 11 számjegyű számsor</td><td>&nbsp;</td></tr>
+                 <tr><td>Hajdu</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Hajdu Zerowatt</td><td>Típus</td><td>3-assal kezdődő 8 jegyű számsor</td><td>&nbsp;</td></tr>
+                 <tr><td>Hoover</td><td>Típus</td><td>3-assal kezdődő 8 jegyű számsor</td><td>&nbsp;</td></tr>
+                 <tr><td>Iberna</td><td>Típus</td><td>3-assal kezdődő 16 jegyű számsor</td><td>&nbsp;</td></tr>
+                 <tr><td>Ignis</td><td>Modell és típus</td><td>Szervizszám (85-tel kezdődő, 12 számjegy)</td><td>&nbsp;</td></tr>
+                 <tr><td>Indesit</td><td>Modell</td><td>Ipari kód (11 számjegyű számsor)</td><td>S/N  szám (9 számjegyű)</td></tr>
+                 <tr><td>Karancs</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Kenwood</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Komfort</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Krups</td><td>&nbsp;</td><td>REF.N szám</td><td>&nbsp;</td></tr>
+                 <tr><td>LG</td><td>Modell</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Liebherr</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Mora</td><td>Modell és típus</td><td>régi: TÍPUS (pl.: 1401.xxxx)/ új: ART</td><td>Szériaszám</td></tr>
+                 <tr><td>Moulinex</td><td>Modell és típus</td><td>REF.N.szám</td><td>&nbsp;</td></tr>
+                 <tr><td>Neff</td><td>&nbsp;</td><td>E-nr</td><td>FD szám</td></tr>
+                 <tr><td>Panasonic</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Pelgrim</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Philips</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Polar</td><td>Modell és típus</td><td>Szervizszám (85-tel kezdődő, 12 számjegy)</td><td>&nbsp;</td></tr>
+                 <tr><td>Privileg</td><td>&nbsp;</td><td>Amilyen adat van! Lehet 85-ös, PNC...stb</td><td>&nbsp;</td></tr>
+                 <tr><td>Progress</td><td>Modell</td><td>PNC (9-cel kezdődő 9 jegyű számsor + 2 jegyű verziószám),</td><td>Szériaszám, ha van!</td></tr>
+                 <tr><td>Rowenta</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Samsung</td><td>Modell</td><td>M/C szám (ált. "/" jeles)</td><td>&nbsp;</td></tr>
+                 <tr><td>Seppelfricke</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Siemens</td><td>&nbsp;</td><td>E-nr</td><td>FD szám</td></tr>
+                 <tr><td>Smeg</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Stiebel Eltron</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Szarvasi</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Techwood</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Tefal</td><td>&nbsp;</td><td>REF.N szám</td><td>&nbsp;</td></tr>
+                 <tr><td>Teka</td><td>Típus</td><td>REF.N szám</td><td>&nbsp;</td></tr>
+                 <tr><td>Thomas</td><td>&nbsp;</td><td>Fantázianév</td><td>&nbsp;</td></tr>
+                 <tr><td>Ufesa</td><td>&nbsp;</td><td>E-nr</td><td>FD szám</td></tr>
+                 <tr><td>Vesta</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Whirlpool</td><td>Modell és típus</td><td>Szervizszám (85-tel kezdődő, 12 számjegy)</td><td>&nbsp;</td></tr>
+                 <tr><td>Zanussi</td><td>Modell</td><td>PNC (9-cel kezdődő 9 jegyű számsor + 2 jegyű verziószám)</td><td>Szériaszám, ha van!</td></tr>
+                 <tr><td>Zelmer</td><td>Típus</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                 <tr><td>Zerowatt</td><td>Típus</td><td>3-assal kezdődő 8 jegyű számsor</td><td></td></tr>
+                </tbody></table>
+                <a href="#sugo"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#azonosito_content');">BEZÁRÁS</div></a>
         </div>
     </section>
 
