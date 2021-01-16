@@ -190,6 +190,7 @@ a:hover {
 }
 
 [id$="_content"] div.normal_button {
+  display: inline-block;
   position: -webkit-sticky;
   position: sticky;
   width: 40%;

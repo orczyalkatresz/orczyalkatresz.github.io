@@ -70,7 +70,7 @@ function toggleElement(selector, speed = "fast"){
 
 function toggleArak(){
   toggleElement("#arak_content", "fast");
- 
+  
 }
 function toggleASZF(){
   toggleElement("#aszf_content", "fast");

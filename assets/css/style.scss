@@ -105,6 +105,7 @@ a:hover{
 }
 [id$="_content"] div.normal_button{
     @extend .normal_button;
+    display: inline-block;
     position: sticky;
     width: 40%;
     height: 5%;
