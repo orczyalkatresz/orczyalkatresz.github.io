@@ -79,7 +79,7 @@ body {
 }
 
 body {
-  background-image: url("../../img/mosogep_hatter_small.png");
+  background-image: url("../../img/mosogep_hatter.png");
   background-attachment: fixed;
   background-repeat: repeat-y;
   -webkit-transition: 0s linear;
@@ -89,7 +89,7 @@ body {
   background-size: cover;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h1 a, h2 a, h3 a {
   font-family: "Secular One", "Open Sans";
   letter-spacing: 3px;
 }
@@ -190,7 +190,8 @@ a:hover {
 }
 
 [id$="_content"] div.normal_button {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   width: 40%;
   height: 5%;
   left: 30%;
