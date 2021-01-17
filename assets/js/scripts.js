@@ -51,7 +51,7 @@ function markaSlider(){
     stream: true, // enable autoplay
     streamEvery: 1500,
     streamRewind: true,
-    pauseOnFocus: true,
+    pauseOnFocus: false,
     pauseOnHover: false,
     
   });
