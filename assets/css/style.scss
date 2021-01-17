@@ -103,6 +103,7 @@ a:hover{
 [id$="_content"] div{
     background-color: inherit;
 }
+// TODO bezáró gombokat középre rendezni
 [id$="_content"] div.normal_button{
     @extend .normal_button;
     display: inline-block;
@@ -243,6 +244,7 @@ section, #home {
 #adattabla_container img{
     max-width: 100%;
 }
+
 .tableizer-table{
    width: 100%;
    font-size: 0.9em;
