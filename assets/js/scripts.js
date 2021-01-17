@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
   init();
-
+  markaSlider();
   var d2 = new Date();
   var end = d2.getTime();
   var duration = end - start;
@@ -27,6 +27,34 @@ function cookieCheck(){
       showElement("#cookie_area");
    }
     
+}
+function markaSlider(){
+  // Kineto.create('#marka_slider_container');
+  Kineto.create('#marka_slider_container',{
+
+    // navigation arrows
+    arrows: false,
+    arrowsInto: null,
+    arrowTemplate: null,
+  
+    // slide counter
+    count: false,
+    countInto: null,
+    countTemplate: null,
+  
+    // pagination bullets
+    pagination: false,
+    paginationInto: null,
+    paginationTemplate: null,
+    speed: 600,
+    loop: true,
+    stream: true, // enable autoplay
+    streamEvery: 1500,
+    streamRewind: true,
+    pauseOnFocus: true,
+    pauseOnHover: false,
+    
+  });
 }
 function accept_Cookies(){
   setCookie("accepted_cookie", "true", 365);

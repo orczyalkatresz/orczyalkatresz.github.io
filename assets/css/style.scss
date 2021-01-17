@@ -270,5 +270,19 @@ section, #home {
 .tableizer-table-adatok tr td{
     font-size: 0.8em;
 }
+#marka_slider_container{
+    margin: 50px 0px 50px 0px;
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+#marka_slider_container img {
+  height: 80px;  
+  max-width: 150px;
+}
+.slide{
+    margin: 0px 20px 0px 20px;
+    float: left;
+}
 
 @import "queries";
