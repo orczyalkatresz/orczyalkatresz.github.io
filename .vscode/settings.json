@@ -1,22 +1,9 @@
-{
-     "liveSassCompile.settings.formats":[
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "assets/css"
-        },
-        {
-            "extensionName": ".min.css",
-            "format": "compressed",
-            "savePath": "assets/css"
-        }
-    ],
-    "liveSassCompile.settings.excludeList": [
-       ".vscode/**"
-    ],
-    "liveSassCompile.settings.generateMap": true,
-    "liveSassCompile.settings.autoprefix": [
-        "> 1%",
-        "last 2 versions"
-    ]
+{	
+    "compile-hero.sass-output-directory": "dist/assets/css",
+    "compile-hero.config": "",
+    "compile-hero.scss-output-directory": "../assets/css",
+    "compile-hero.javascript-output-directory": "../assets/js",
+    "compile-hero.generate-minified-css-only": true,
+    "compile-hero.generate-minified-html": true,
+    "compile-hero.generate-minified-javascript-only": true
 }
