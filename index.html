@@ -20,7 +20,7 @@
  
     <header id="header" class="col-12">
         <div class="col-3 centered">
-            <a href="/">
+            <a href="/" class="col-12" nopadding>
                 <p class="col-12" id="page_name"><img alt="Háztartási gép szerviz" id="logo" src="img/orczylogo.svg"> márka-szerviz.hu</p>
             </a>
             <div id="page_name_alt" class="col-12 only_desktop">Orczy háztartási gép alkatrészáruház és szerviz</div>
@@ -32,7 +32,7 @@
                 <div class="mob-6 col-6"><a href="mailto:szervizinfo@orczy.com?subject=Márka-szerviz érdeklődés&body=Tisztelt Márka-szerviz.hu! %0D%0A %0D%0AAz alábbi kérdésem/kérésem lenne Önök felé:">szervizinfo@orczy.com</a></div>
             </div>
             <div id="mobile_menu_button" class="only_mobile mob-2" >
-                <img style="float: right;" id="menu_button" alt="Menü" width="30" height="30" src="img/MENU_FEHER.png"  />
+                <img style="float: right;" id="menu_button" alt="Menü" width="30" height="30" src="img/MENU_FEHER.png" onclick="toggleElement('.mobile_menu');" />
             </div>
         </div> 
 
@@ -131,9 +131,9 @@
         <div class="col-7 centered rolunk">
             <div class="col-12">
                 <div class="col-6">
-                    <h1>
+                    <h2>
                         Kedvező árak
-                    </h1>
+                    </h2>
                     <p>
                         Az alkatrészeket tömegével rendeljük és tartjuk raktáron, vagy rövid határidővel beszerezzük.
                     </p>
@@ -147,9 +147,9 @@
                 <img  src="img/hutoszekreny.webp" alt="hűtőszekrény_hűtőgép_szerelő">
             </div>
             <div class="col-6">
-                <h1>
+                <h2>
                     Bízza a szerelőre!
-                </h1>
+                </h2>
                 <p>
                 Több, mint 40 márkához tudunk alkatrészeket rendelni sokféle kis- és nagykészülékhez egyaránt. 
                 </p>
@@ -158,9 +158,9 @@
             </div>
             <div class="col-12">
             <div class="col-6">
-                <h1>
+                <h2>
                     Nyomonkövetés
-                </h1>
+                </h2>
                 <p>
                     A szerelésről és az alkatrész elérhetőségéről folyamatos tájékozatást adunk.
                 </p>
@@ -218,21 +218,21 @@
     </section>
   
     <section id="szerviz">
-        <h2 class="centered" >Szerelőink felkészülten várják a munkákat, több, mint negyven márkához!</h2>
+        <h1 class="centered" >Szerelőink felkészülten várják a munkákat, több, mint negyven márkához!</h1>
         <div class="col-6"> 
             
             <ol style="font-size: 1.3em;">
                 <li> 
-                    <h3>Ön bejelenti szerviz igényét</h3>
+                    <h2>Ön bejelenti szerviz igényét</h2>
                 </li>
                 <li>
-                    <h3>Mi megkeressük Önt és felmérjük a hibát</h3>
+                    <h2>Mi megkeressük Önt és felmérjük a hibát</h2>
                 </li>
                 <li>
-                    <h3>Lehetőség szerint helyszínen javítunk. Ha mégsem, akkor még aznap megrendeljük Önnek az alkatrészt</h3>
+                    <h2>Lehetőség szerint helyszínen javítunk. Ha mégsem, akkor még aznap megrendeljük Önnek az alkatrészt</h2>
                 </li>
                 <li>
-                    <h3>Megjavítjuk a készülékét</h3>
+                    <h2>Megjavítjuk a készülékét</h2>
                 </li>
             </ol>
             <div class="col-12 centered">
@@ -304,7 +304,7 @@
             </div>
         </div>
         <div class="col-12 centered">
-            <h1>A kapcsolatfelvételhez hívjon minket a <br class="only_mobile">+36 1 210 9237-es telefonszámon, írjon emailt, vagy töltse ki gyors <a style="color: black;" href="#bejelentes">online hibajelentő kérdőívünket!</a></h1>
+            <h3>A kapcsolatfelvételhez hívjon minket a <br class="only_mobile">+36 1 210 9237-es telefonszámon, írjon emailt, vagy töltse ki gyors <a style="color: black;" href="#bejelentes">online hibajelentő kérdőívünket!</a></h3>
         </div>
         
     </section>
@@ -319,7 +319,7 @@
             <p>Az árak 2021. január 01-től érvényesek visszavonásig.</p>
         </div>
         
-        <div class="normal_button" id="arak_button">
+        <div class="normal_button" id="arak_button" onclick="toggleElement('#arak_content');" >
             Kattinson ide az árak megtekintéséhez!
         </div>
         
@@ -654,7 +654,7 @@
             </div>
 
             
-            <a href="#arak"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleArak();">BEZÁRÁS</div></a>
+            <a href="#arak"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#arak_content');">BEZÁRÁS</div></a>
 
         </div> 
     
@@ -668,7 +668,7 @@
 
         </div>  
         <!-- TODO alternativ linket tenni ide -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefOtfZyZDjoyBixr0qi-kGE1_NT8Tp5Cm_vbzJ8ddxV_XJQw/viewform?embedded=true" 
+        <iframe title="Google űrlap online hibabejelentéshez" src="https://docs.google.com/forms/d/e/1FAIpQLSefOtfZyZDjoyBixr0qi-kGE1_NT8Tp5Cm_vbzJ8ddxV_XJQw/viewform?embedded=true" 
         width="90%"  frameborder="0" marginheight="0" marginwidth="0">Nem sikerült az űrlap beágyazása. Kérjük kattinson ide: 
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSefOtfZyZDjoyBixr0qi-kGE1_NT8Tp5Cm_vbzJ8ddxV_XJQw/viewform">Űrlap kitöltése</a></iframe>
         
@@ -837,7 +837,7 @@
     </section>
 
     <section id="aszf">
-        <div class="normal_button" id="aszf_button">
+        <div class="normal_button" id="aszf_button" onclick="toggleElement('#aszf_content');">
             Tekintse meg Általános Felhasználási Szerződést!
         </div>
          <!-- TODO ÁSZF-t írni, formázni , szervizes új garancia infókkal kiegészíteni-->
@@ -962,16 +962,17 @@
                 Megrendelő hozzájárul ahhoz, hogy a munkalapon megadott személyes adatait Szolgáltató saját rendszerében kezelje és tárolja, valamint a javítási szerződés teljesítése során felhasználja. Szolgáltató vállalja, hogy Megrendelő adatait biztonságosan kezeli, azokat harmadik személy részére nem adja ki.
             </p>
      
-            <div class="normal_button" onclick="toggleASZF()">Bezárás</div>
+            <a href="#aszf"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#aszf_content');">BEZÁRÁS</div></a>
             
         </div> 
 
          <!-- TODO adatkezelésit-t írni, formázni -->
-        <div class="normal_button" id="adatkezeles_button">
+        <div class="normal_button" id="adatkezeles_button" onclick="toggleElement('#adatkezeles_content');">
             Tekintse meg az Adatkezelési tájékoztatót!
         </div>
         <div id="adatkezeles_content"  >
             Adatkezelési tájékozató
+            <a href="#aszf"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#adatkezeles_content');">BEZÁRÁS</div></a>
         </div>
 
     </section>
@@ -1004,10 +1005,10 @@
         <div class="col-4">
             
             <div class="col-12">
-                <a href="#aszf" onclick="toggleASZF();">Általános szerződési feltételek</a>
+                <a href="#aszf" onclick="toggleElement('#aszf_content');">Általános szerződési feltételek</a>
             </div>
             <div class="col-12">
-                <a href="#aszf" onclick="toggleAdatkezeles();">Adatkezelési nyilatkozat</a>
+                <a href="#aszf" onclick="toggleElement('#adatkezeles_content');">Adatkezelési nyilatkozat</a>
             </div>
 
             <div class="col-12">
