@@ -4,21 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/js/kineto-main/dist/kineto.css">
-    <meta name="robots" content="noindex" />
+    <!-- <meta name="robots" content="noindex" /> -->
     <meta charset="utf-8">
     <meta name="description" content="Elromlott háztartási gépe? Kérjen szerviz szolgáltatást az egész ország területén!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Márka-szerviz.hu</title>
 </head> 
 
- <!-- TODO img-eket alt attributumal ellátni -->
- <!-- TODO maradék képeket webp-re konvertálni, 10 perces limitre figyelni -->
+ 
 <body id="mainbody"> 
     <div id="main_container">
     <!-- TODO MÁRKÁK ALOLDALAKAT CSINÁLNI a későbbiekben
         
     -->
-
+ 
     <header id="header" class="col-12">
         <div class="col-3 centered">
             <a href="/">
@@ -32,7 +31,7 @@
                 <div class="mob-6 col-6 tel_header"><a href="tel:+3612109237">+36 1 210 9237</a></div>
                 <div class="mob-6 col-6"><a href="mailto:szervizinfo@orczy.com?subject=Márka-szerviz érdeklődés&body=Tisztelt Márka-szerviz.hu! %0D%0A %0D%0AAz alábbi kérdésem/kérésem lenne Önök felé:">szervizinfo@orczy.com</a></div>
             </div>
-            <div id="mobile_menu_button" onclick="toggleElement('.mobile_menu','fast');" class="only_mobile mob-2" >
+            <div id="mobile_menu_button" class="only_mobile mob-2" >
                 <img style="float: right;" id="menu_button" alt="menü" width="30" src="img/MENU_FEHER.png"  />
             </div>
         </div> 
@@ -62,9 +61,7 @@
             <h1 class="col-12 centered" style="align-self: center;" id="home_text">Szerelőre lenne szüksége háztartási gépéhez?</h1>
         </div>
         
-        
-        <div  id="marka_slider_container" class="carousel">
-            
+        <div id="marka_slider_container" class="carousel">
             <div class="slide">
                 <img class="count" src="img/logo/beko_szerviz.png">
             </div>
@@ -117,13 +114,15 @@
                 <img class="count" src="img/logo/zanussi_szerviz.png">
             </div>
           </div>
-    
+
         <div class="col-12 card_container">
             <div class="card"><div>Kérjen szerviz szolgáltatást Magyarországon bárhol!</div></div>
             <div class="card"><div>Raktárunkon több, mint 26000 alkatrész van, több, mint 40 márkához!</div></div>
             <div class="card"><div>Jelentse be szervizigényét gyorsan és egyszerűen online, telefonon, vagy emailben!</div></div>
         </div>
     </div>
+    
+ 
 
     <section id="rolunk">
         <h1 class="centered" style="font-size: 2em;">RÓLUNK </h1>
@@ -139,12 +138,12 @@
                     </p>
                 </div>
                 <div class="col-6">
-                    <img src="img/mosogep_allo.webp">
+                    <img src="img/mosogep_allo.png">
                 </div>
              </div>
              <div class="col-12">
             <div class="col-6 only_desktop centered">
-                <img  src="img/hutoszekreny.webp">
+                <img  src="img/hutoszekreny.png">
             </div>
             <div class="col-6">
                 <h1>
@@ -166,7 +165,7 @@
                 </p>
             </div>
             <div class="col-6">
-                <img src="img/porszivo.webp">
+                <img src="img/porszivo.png">
             </div>
             </div>
         </div>
@@ -207,7 +206,7 @@
                 </li>
             </ul>
             <div class="col-12 centered">
-                <img width="300" src="img/mikrohullamu_suto.webp">
+                <img width="300" src="img/mikrohullamu_suto.png">
             </div>
         </div>
         <div class="col-12 centered">
@@ -236,7 +235,7 @@
                 </li>
             </ol>
             <div class="col-12 centered">
-                <img style="max-width: 100px;" src="img/szerszamok.webp">
+                <img style="max-width: 100px;" src="img/szerszamok.png">
             </div>
             <div class="col-12">
                 <h3>
@@ -319,7 +318,7 @@
             <p>Az árak 2021. január 01-től érvényesek visszavonásig.</p>
         </div>
         
-        <div class="normal_button" id="arak_button" onclick="toggleElement('#arak_content');">
+        <div class="normal_button" id="arak_button">
             Kattinson ide az árak megtekintéséhez!
         </div>
         
@@ -334,7 +333,7 @@
                     <h3>Bevizsgálási és kiszállási díjaink:</h3>
                     <p> A javítási árajánlat elfogadása esetén a hiba megállapítás díja (5000.-Ft) a végszámlából levonásra kerül. A szerelő nagyobb összegű javításnál előleget kérhet az ügyféltől.
                         Amennyiben a javítási árajánlat elutasításra kerül, abban az esetben a kiszállási és hiba megállapítási díjat kell csak kifizetni.
-                        Budapesten és pest megyében 3.990 Ft. a kiszállás.
+                        Budapesten és Pest megyében 3.990 Ft. a kiszállás.
                     </p>
                     
                         <p>A hiba megállapítás díja a következőket tartalmazza:
@@ -654,7 +653,7 @@
             </div>
 
             
-            <a href="#arak"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#arak_content');">BEZÁRÁS</div></a>
+            <a href="#arak"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleArak();">BEZÁRÁS</div></a>
 
         </div> 
     
@@ -837,7 +836,7 @@
     </section>
 
     <section id="aszf">
-        <div class="normal_button" id="aszf_button" onclick="toggleElement('#aszf_content');">
+        <div class="normal_button" id="aszf_button">
             Tekintse meg Általános Felhasználási Szerződést!
         </div>
          <!-- TODO ÁSZF-t írni, formázni , szervizes új garancia infókkal kiegészíteni-->
@@ -961,19 +960,17 @@
                 
                 Megrendelő hozzájárul ahhoz, hogy a munkalapon megadott személyes adatait Szolgáltató saját rendszerében kezelje és tárolja, valamint a javítási szerződés teljesítése során felhasználja. Szolgáltató vállalja, hogy Megrendelő adatait biztonságosan kezeli, azokat harmadik személy részére nem adja ki.
             </p>
-            
-            <a href="#aszf"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#aszf_content');" >BEZÁRÁS</div></a>
+     
+            <div class="normal_button" onclick="toggleASZF()">Bezárás</div>
             
         </div> 
 
          <!-- TODO adatkezelésit-t írni, formázni -->
-        <div class="normal_button" id="adatkezeles_button" onclick="toggleElement('#adatkezeles_content');">
+        <div class="normal_button" id="adatkezeles_button">
             Tekintse meg az Adatkezelési tájékoztatót!
         </div>
         <div id="adatkezeles_content"  >
             Adatkezelési tájékozató
-
-            <a href="#aszf"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#adatkezeles_content');">BEZÁRÁS</div></a>
         </div>
 
     </section>
@@ -981,13 +978,13 @@
     <!-- lap tetejére gomb -->
     <div id="up_nav" >
         <a href="#header">
-            <img alt="Ugrás fel" src="img/up_button.webp"  width="100%">
+            <img alt="Ugrás fel" src="img/up_button.png"  width="100%">
         </a>
     </div>
 
     <!-- Cookie elfogadó blokk -->
     <div id="cookie_area">
-        <p>Oldalunkon sütiket használunk a jobb felhasználói élmény érdekében! A használattal Ön elfogadja <a onclick="toggleElement('#adatkezeles_content');" href="#aszf">Adatkezelési Nyilatozatunkat.</a></p>
+        <p>Oldalunkon sütiket használunk a jobb felhasználói élmény érdekében! A használattal Ön elfogadja <a onclick="toggleAdatkezeles();" href="#aszf">Adatkezelési Nyilatozatunkat.</a></p>
         <div class="normal_button" onclick="accept_Cookies();">Értettem</div>
     </div>
 
@@ -1006,10 +1003,10 @@
         <div class="col-4">
             
             <div class="col-12">
-                <a href="#aszf" onclick="toggleElement('#aszf_content');">Általános szerződési feltételek</a>
+                <a href="#aszf" onclick="toggleASZF();">Általános szerződési feltételek</a>
             </div>
             <div class="col-12">
-                <a href="#aszf" onclick="toggleElement('#adatkezeles_content');">Adatkezelési nyilatkozat</a>
+                <a href="#aszf" onclick="toggleAdatkezeles();">Adatkezelési nyilatkozat</a>
             </div>
 
             <div class="col-12">
@@ -1032,8 +1029,7 @@
     </footer>
 </div>
 <script src="assets/js/jquery-3.5.1.min.js"></script>
-<script src="assets/js/kineto-main/dist/kineto.js"></script>
 <script src="assets/js/scripts.prod.js"></script>
-
+<script src="assets/js/kineto-main/dist/kineto.js"></script>
 </body>
 </html>
