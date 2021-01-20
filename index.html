@@ -675,9 +675,9 @@
     <section id="bejelentes">
         <div class="col-12" style="text-align: center;">
             <h2>Jelentse be online az elromlott, vagy beüzemelendő készülékét!</h2>
-            <p>Hívja a <a style="color: black;font-weight: bold;" href="tel:+3612109237">+36 1 210 9237</a> számot, vagy küldje el szerviz igényét a
-                <a style="color: black; font-weight: bold;" href="mailto:szervizinfo@orczy.com?subject=Márka-szerviz érdeklődés&body=Tisztelt Márka-szerviz.hu! %0D%0A %0D%0AAz alábbi kérdésem/kérésem lenne Önök felé:">szervizinfo@orczy.com</a>
-                email címre!</p>
+            <p>Hívja a <a  href="tel:+3612109237">+36 1 210 9237</a> számot, vagy küldje el szerviz igényét a
+                <a  href="mailto:szervizinfo@orczy.com?subject=Márka-szerviz érdeklődés&body=Tisztelt Márka-szerviz.hu! %0D%0A %0D%0AAz alábbi kérdésem/kérésem lenne Önök felé:">szervizinfo@orczy.com</a>
+                email címre! Ehhez segítséget az oldal alján található <a href="#sugo" onclick="toggleElement('#bejelentes_content');">Súgó</a> menüpontban talál!</p> 
                 <h3 class="centered">vagy</h3>
             <p>Töltse ki a lenti kérdőívünket, körülbelül öt perc alatt! Ezzel megspórolja a várakozást, és telefonos költségét is!</p>
             <p>Rövid időn belül felhívjuk és árajánlatot teszünk!</p>
@@ -695,9 +695,27 @@
      <!-- TODO súgót átnézni, lektorálni -->
      <section id="sugo">
         <h2 class="centered">Súgó</h2>
+        <div class="normal_button" onclick="toggleElement('#bejelentes_content')">
+            Milyen adatokra lesz szükségem a bejelentéshez?
+        </div>
+        <div id="bejelentes_content">
+            <p>
+                A bejelentéshez az alábbi dolgokra lesz szükség:
+                <p><li>A meghibásodott készülék pontos adatai.(modellszám, termékszám, sorozatszám). Lásd a 'Milyen azonosítókat keressek a gépen?' menüpontot!</li></p>
+                    <p><li>Ha lehetséges, fotózza le a készülék adattáblát! Ez nekünk nagy segítség a munkához, és az esetleges elgépeléseket és félrehallott azonosítókat
+                         is kizárja. Lásd a 'Hol találom az adattáblát?' menüpontot!</li></p>
+                    <p><li>Egy kapcsolatfelvételi telefonszám és email cím. Ezeken értesítjük Önt a szerelés állapotáról.</li></p>
+                    <p><li>Garanciális munka esetén, a vásárláskor kapott számla és jótállási jegy. Enélkül a gyártó visszautasítja a díjmentes szerelést!</li></p>
+                    <p><li>A hiba pontos leírása. Próbálja minél jobban körülírni a hibajelenséget! Ne csak annyit írjon például, hogy folyik a mosógép, hanem próbálja
+                    meg leírni, hogy melyik oldalon, a program melyik részénél, sok, vagy kevés víz folyik, stb.! Minél jobban ismerjük a hibát, annál hatékonyabban
+                    tudunk segíteni.
+                </li></p>
+            </p>
+            <a href="#sugo"> <div class="normal_button col-12" style="display: inline-block;" onclick="toggleElement('#bejelentes_content');">BEZÁRÁS</div></a>
+        </div>
 
         <div class="normal_button" onclick="toggleElement('#adattabla_content')">
-            Hol találom az adattáblát??
+            Hol találom az adattáblát?
         </div>
         <div id="adattabla_content">
             <p>Márkánként és készülékenként eltérhet, hogy a gyártó hova rögzíti a készülék azonosítóit tartalmazó adattáblát. Ehhez próbálunk most egy kis iránymutatást adni, hogy gyorsabban menjen a szolgáltatás.</p>
